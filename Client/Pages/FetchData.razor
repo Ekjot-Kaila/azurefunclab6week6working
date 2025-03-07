@@ -32,7 +32,7 @@
     private Student[]? students;
 
     protected override async Task OnInitializedAsync() {
-        students = await Http.GetFromJsonAsync<Student[]>("api/students");
+        students = await Http.GetFromJsonAsync<Student[]>("https://gentle-pond-0f69c8a10.6.azurestaticapps.net/api/students");
 
     }
 
